@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+.flex-fill-parent {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+.iconav-nav > .nav-item > .nav-link, .iconav-brand {
+    font-size: 30px !important;
+    line-height: 45px !important;
+    padding: 10px !important;
+}
+.signature {
+    font-family: 'TheSuavity';
+    font-size: 30px !important;
+}
+@font-face {
+    font-family: 'TheSuavity';
+    src: url('signature.ttf') format('truetype');
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  /* The typing effect */
+  @-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
