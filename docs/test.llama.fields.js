@@ -1,8 +1,8 @@
 ﻿const { expect } = chai
 import sinon from "./lib/sinon-esm.js"
-import { bootstrap4 as fieldTypes } from "../src/form.fieldTypes.bootstrap4.js"
-import { Llama } from "../src/llama.js"
-import { EnumField } from "../src//form.field.js"
+import { bootstrap4 as fieldTypes } from "https://cdn.jsdelivr.net/gh/sirtcrew/llama/src/form.fieldTypes.bootstrap4.js"
+import { Llama } from "https://cdn.jsdelivr.net/gh/sirtcrew/llama/src/llama.js"
+import { EnumField } from "https://cdn.jsdelivr.net/gh/sirtcrew/llama/src/form.field.js"
 let form
 
 describe(`Llama Field Tests: ${name}`, () => {
