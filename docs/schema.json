@@ -1,0 +1,96 @@
+{
+    "required": [
+        "EmployeeName",
+        "Percent_Of_Coolness",
+        "Cost_Centres"
+    ],
+    "properties": {
+        "EmployeeName": {
+            "type": "string"
+        },
+        "Percent_Of_Coolness": {
+            "type": "percent"
+        },
+        "Employee_ID": {
+            "type": "number"
+        },
+        "Budgeted": {
+            "type": "boolean"
+        },
+        "Contract_StartDate": {
+            "type": "date"
+        },
+        "Contract_RatDate": {
+            "type": "date"
+        },
+        "Contract_StartDateTime": {
+            "type": "datetime"
+        },
+        "Contract_RatDateTime": {
+            "type": "datetime"
+        },
+        "Reason": {
+            "enum": [
+                "Advertise a permanent position",
+                "Advertise a temporary position",
+                "Commence a contract negotiation (Temporary only)",
+                "Extension of temporary contract",
+                "Other"
+            ]
+        },
+        "Many_Reasons": {
+            "enum": [
+                "Advertise a permanent position",
+                "Advertise a temporary position",
+                "Commence a contract negotiation (Temporary only)",
+                "Extension of temporary contract",
+                "Other"
+            ]
+        },
+        "Appointment_Type": {
+            "enum": [
+                "Casual",
+                "Temporary",
+                "Permanent"
+            ]
+        },
+        "Cost_Centres": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "Cost_Centre"
+                ],
+                "properties": {
+                    "Cost_Centre": {
+                        "type": "number"
+                    },
+                    "Cost_Centre_Percent": {
+                        "type": "percent"
+                    },
+                    "Internal_Order_Number": {
+                        "type": "number"
+                    },
+                    "Date_Of_Something": {
+                        "type": "datetime"
+                    },
+                    "Position_Lookup": {
+                        "type": "number"
+                    }
+                },
+                "dependencies": {
+                    "Date_Of_Something": [
+                        "Cost_Centre"
+                    ]
+                }
+            }
+            
+        },
+        "RetailValue": {
+            "type": "currency"
+        },
+        "Note": {
+            "type": "label"
+        }
+    }
+}

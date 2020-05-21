@@ -1,1 +1,25 @@
-Hello World
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ES6 Modules</title>
+    <link href="./lib/mocha.css" rel="stylesheet" />
+    <link href="../css/flatpickr.min.css" rel="stylesheet" />
+    <link href="../css/toolkit-inverse.min.css" rel="stylesheet" />
+</head>
+<body>
+    <p>You're looking at the Llama</p>
+    <div id="mocha"></div>
+    <script src="./lib/mocha.js"></script>
+    <script src="./lib/axios-mock-adapter.js"></script>
+    <script src="./lib/chai.js"></script>
+    <script src="./lib/chai-as-promised.js"></script>
+    <script src="./lib/chai-dom.js"></script>
+    <script type="module" src="./tests.js"></script>
+    <script type="module">
+        mocha.checkLeaks()
+        mocha.run()
+    </script>
+</body>
+</html>
